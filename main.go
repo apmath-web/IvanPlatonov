@@ -13,7 +13,7 @@ func dateHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", dateHandler)
+	http.HandleFunc("/date", dateHandler)
 
 	http.ListenAndServe(":8080", nil)
 }
